@@ -1,4 +1,8 @@
 # docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
+# 密码查看
+#  docker logs alist
+#  # 或者
+#  docker exec -it alist ./alist password
 
 version: '3.3'
 services:

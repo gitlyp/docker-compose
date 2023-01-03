@@ -1,0 +1,17 @@
+# portainer docker manager web ui
+version: '2'
+services:
+  portainer:
+    image: portainer/portainer-ce
+    restart: always
+    container_name: portainer
+    ports:
+      - "8000:8000"
+      - "9000:9000"
+    volumes:
+      - '/data/portainer_data:/data'
+      - '/var/run/docker.sock:/var/run/docker.sock'
+
+volumes:
+  portainer_data:
+    external: true

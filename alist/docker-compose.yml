@@ -9,7 +9,7 @@ services:
   alist:
     restart: always
     volumes:
-      - '/data/alist:/opt/alist/data'
+      - '/data/docker/alist:/opt/alist/data'
     ports:
       - '5244:5244'
     environment:

@@ -10,7 +10,7 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=root
     image: mongo:4.2.23
     volumes:
-      - '/data/mongo:/etc/mongo'
+      - '/data/docker/mongo:/etc/mongo'
     ports:
       - 27017:27017
     restart: always

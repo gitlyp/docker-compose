@@ -1,0 +1,12 @@
+# 导航页页面
+version: '3.6'
+
+services:
+  flare:
+    image: soulteary/flare
+    restart: always
+    command: flare
+    ports:
+      - 5005:5005
+    volumes:
+      - /data/docker/app:/app

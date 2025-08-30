@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  wallabag:
+    volumes:
+      - '/data/docker/wallabag/data/:/var/www/wallabag/data'
+      - '/data/docker/wallabag/images:/var/www/wallabag/web/assets/images'
+    ports:
+      - '9980:80'
+    image: wallabag/wallabag
